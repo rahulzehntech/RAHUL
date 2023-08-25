@@ -2,7 +2,7 @@
 
 include "config.php";
 
-if (isset($_POST['submit']) && isset($_FILES['file'])) {
+if (isset($_POST['submit'])) {
    
     $fname = $_POST['firstname'];
     $lname = $_POST['lastname'];
@@ -10,12 +10,14 @@ if (isset($_POST['submit']) && isset($_FILES['file'])) {
     $contact = $_POST['contact'];
     $city = $_POST['city'];
 
-    $filename = $_FILES['file']['name'];
-    $tempname = $_FILES['file']['tmp_name']; 
+    $file_name = $_FILES['file']['name'];
+    $temp_name = $_FILES['file']['tmp_name']; 
 
-    $folder = "upload/".$filename; 
+    $folder = "upload/".$file_name; 
 
-        $sql = "insert into login (firstname, lastname, username,contact,city, file) values('$fname','$lname','$username','$contact', '$city' ,'$filename')";
+    move_uploaded_file($file_name, "upload/".$temp_name);
+
+        $sql = "insert into login (firstname, lastname, username,contact,city, file) values('$fname','$lname','$username','$contact', '$city' ,'$file_name')";
 
     if (mysqli_query($conn, $sql)) {
 

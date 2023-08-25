@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 
+<?php
+
+session_start();
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,7 +18,7 @@
 </head>
 <body>
 
-<h2 class = "text-bg-success"> WELCOME <php $S  ?>
+<h2 class = "text-bg-success"> WELCOME <?php $_SESSION['username'] ?>
 </h2>
     
 </body>
