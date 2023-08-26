@@ -1,7 +1,7 @@
 <?php
 
 
-$conn = mysqli_connect("localhost", "root", "", "crud") or die("Connection Failed");
+$conn = mysqli_connect("localhost", "root", "", "login") or die("Connection Failed");
 
 
 

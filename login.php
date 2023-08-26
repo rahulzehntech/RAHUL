@@ -14,7 +14,7 @@
     
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
+
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -37,7 +37,7 @@
 
     <h2 class="fw-bold">Login to your account.</h2><br>
 
-  <form class="  needs-validation  " novalidate>
+  <form class="  needs-validation  " action="logincode.php" method="post" novalidate>
     
     <div class="col-md-4 mb-3">
 

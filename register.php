@@ -14,7 +14,7 @@
     
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
+ 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -37,8 +37,8 @@
 
     <h2 class="fw-bold">Registration Form</h2>
 
-  <form class="needs-validation" method = "post" action="connection.php" novalidate >
-    <div class="col-md-4 mb-3" enctype="multipart/form-data">
+  <form class="needs-validation" method = "post" action="connection.php" novalidate enctype="multipart/form-data">
+    <div class="col-md-4 mb-3">
       <label for="validfirstname" class="form-label">First name</label>
       <input type="text" class="form-control" id="validfirstname" name="firstname"  required>
       <div class="invalid-feedback">
@@ -67,6 +67,18 @@
         <input type="text" class="form-control" id="validusername" aria-describedby="inputGroupPrepend" name="username"  required>
         <div class="invalid-feedback">
           Please choose a username.
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-4 mb-3">
+      <label for="validpassword" class="form-label">Password</label>
+      <div class="input-group has-validation">
+       
+        <input type="password" class="form-control" id="validpassword" aria-describedby="inputGroupPrepend" name="password"  required>
+        <div class="invalid-feedback">
+          Please provide a password.
         </div>
       </div>
     </div>
