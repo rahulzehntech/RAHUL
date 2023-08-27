@@ -34,7 +34,10 @@ if(isset($_SESSION["firstname"]) && isset($_SESSION["lastname"])) {
 ?>
 
 
-      <button class="btn btn-primary" type="submit" value="logout"><a href="logout.php">logout</a></button>
+<div class="container-fluid text-align-center"></div>
+     <a href="logout.php">
+     <button class="btn btn-primary" type="submit" value="logout">logout</button>
+     </a>
    
 
 </div>
