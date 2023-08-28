@@ -107,7 +107,7 @@
     
 
     <div class="mb-3 col-md-4">
-      <label for="validfile" class="form-label">Multiple files input example</label>
+      <label for="validfile" class="form-label">Upload image</label>
       <input class="form-control" type="file" id="validfile" name="file"  required>
     </div>
     

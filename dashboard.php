@@ -41,11 +41,14 @@ if (!isset($_SESSION["username"])) {
     </ul>
   </div>
 
-  
-<div class="container-fluid text-align-center"></div>
+
+
      <a href="logout.php">
      <button class="btn btn-danger" type="submit" value="logout">logout</button>
      </a>
+
+     
+     
 
   </div>
 </nav>
@@ -53,13 +56,35 @@ if (!isset($_SESSION["username"])) {
 
 <div class= "container-fluid">
     <div class="row text-center mt-5" >
-<?php
-if(isset($_SESSION["firstname"]) && isset($_SESSION["lastname"])) {
-    echo "<h2>WELCOME!</h2>". $_SESSION["firstname"] . " " . $_SESSION["lastname"];
-} else {
-    echo "<h2>WELCOME! User</h2>";
-}
-?>
+
+    <?php  if (isset($_SESSION['username']) ) : ?>
+             <h1>
+                             Welcome!
+                             <strong>
+                                 <?php echo $_SESSION['username']; ?>
+                             </strong>
+                         </h1>
+
+                 <?php endif ?>
+
+                 
+    <?php  if (isset($_SESSION['firstname']) ) : ?>
+             <h1>
+                             Welcome!
+                             <strong>
+                                 <?php echo $_SESSION['firstname']; ?>
+                             </strong>
+                         </h1>
+   
+                        
+                 <?php endif ?>
+
+
+
+
+
+
+
 </div>
         
 </div>
