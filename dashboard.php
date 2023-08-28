@@ -22,9 +22,37 @@ if (!isset($_SESSION["username"])) {
 </head>
 <body>
    
-<div class="p-5">
 
-    
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="container-fluid" >
+<a class="navbar-brand" href="#">iLogin</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      
+     <!--  <li class="nav-item">
+        <a class="nav-link" href="register.php">Register</a>
+      </li> -->
+      
+    </ul>
+  </div>
+
+  
+<div class="container-fluid text-align-center"></div>
+     <a href="logout.php">
+     <button class="btn btn-danger" type="submit" value="logout">logout</button>
+     </a>
+
+  </div>
+</nav>
+
+
+<div class= "container-fluid">
+    <div class="row text-center mt-5" >
 <?php
 if(isset($_SESSION["firstname"]) && isset($_SESSION["lastname"])) {
     echo "<h2>WELCOME!</h2>". $_SESSION["firstname"] . " " . $_SESSION["lastname"];
@@ -32,14 +60,6 @@ if(isset($_SESSION["firstname"]) && isset($_SESSION["lastname"])) {
     echo "<h2>WELCOME! User</h2>";
 }
 ?>
-
-
-<div class="container-fluid text-align-center"></div>
-     <a href="logout.php">
-     <button class="btn btn-primary" type="submit" value="logout">logout</button>
-     </a>
-   
-
 </div>
         
 </div>
