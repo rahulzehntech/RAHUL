@@ -2,7 +2,7 @@
 $conn = mysqli_connect("localhost", "root", "", "crud") or die("connection failed");
 
 
-// Process login
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
     $password = $_POST["password"];
@@ -19,6 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $user = mysqli_fetch_assoc($result);
         session_start();
         $_SESSION["username"] = $user["username"];
+        $_SESSION["firstname"] = $user["firstname"];
         header("Location: dashboard.php"); 
         exit();
     } else {

@@ -16,11 +16,12 @@
   <div class="container-fluid" >
 
 <a class="navbar-brand" href="#">iLogin</a>
+
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <div class="collapse navbar-collapse " id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       
       <li class="nav-item">
@@ -29,18 +30,19 @@
       
     </ul>
     
-  </div>
-  </div>
+     </div>
+</div>
 </nav>
   
-  <div class="container mt-4 ">
+  <div class="container d-flex justify-content-center mt-4 ">
+
+  <div class="col-5">
 
     <h2 class="fw-bold">Login to your account.</h2><br>
 
   <form class="  needs-validation  " action="logincode.php" method="post" novalidate>
     
-    <div class="col-md-4 mb-3">
-
+    <div >
       <label for="validusername" class="form-label">Username</label>
       <div class="input-group has-validation">
         <span class="input-group-text" id="inputGroupPrepend">@</span>
@@ -49,10 +51,10 @@
           Please enter a username.
         </div>
       </div>
-    </div>
+    </div><br>
 
-    <div class="col-md-4 mb-3">
 
+<div >
 <label for="validusername" class="form-label">Password</label>
 <div class="input-group has-validation">
  
@@ -61,14 +63,15 @@
     Please enter your password.
   </div>
 </div>
-</div>
+</div><br>
 
 
 
-    <div class="col-12">
+    <div class="col-6 mb-3">
       <button class="btn btn-success" type="submit">LOGIN</button>
     </div>
   </form>
+  </div>
 </div>
           
 

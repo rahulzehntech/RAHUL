@@ -27,29 +27,13 @@ if (!isset($_SESSION["username"])) {
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
   <div class="container-fluid" >
 <a class="navbar-brand" href="#">iLogin</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      
-     <!--  <li class="nav-item">
-        <a class="nav-link" href="register.php">Register</a>
-      </li> -->
-      
-    </ul>
-  </div>
-
-
-
+  
      <a href="logout.php">
      <button class="btn btn-danger" type="submit" value="logout">logout</button>
      </a>
 
-     
-     
 
+    
   </div>
 </nav>
 
@@ -67,24 +51,11 @@ if (!isset($_SESSION["username"])) {
 
                  <?php endif ?>
 
-                 
-    <?php  if (isset($_SESSION['firstname']) ) : ?>
-             <h1>
-                             Welcome!
-                             <strong>
-                                 <?php echo $_SESSION['firstname']; ?>
-                             </strong>
-                         </h1>
-   
-                        
-                 <?php endif ?>
+</div>
 
+<div class = "row text-center my-4">
 
-
-
-
-
-
+<p class = "display-6 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti officia natus, quidem necessitatibus reprehenderit vitae obcaecati culpa nam, enim, inventore cum quo eveniet molestiae voluptas aperiam praesentium dignissimos impedit quos?</p>
 </div>
         
 </div>

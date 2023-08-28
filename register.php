@@ -21,14 +21,11 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
 
-     
       <li class="nav-item">
         <a class="nav-link" href="login.php">Login</a>
       </li>
@@ -39,12 +36,13 @@
   </div>
 </nav>
   
-  <div class="container col-10 justify-content-center align-items-center mt-4 ">
+  <div class="container d-flex justify-content-center  mt-4 ">
 
+  <div class = "col-7">
     <h2 class="fw-bold">Registration Form</h2>
 
   <form class="needs-validation" method = "post" action="connection.php" novalidate enctype="multipart/form-data">
-    <div class="col-md-4 mb-3">
+    <div class=" col-md-4 mb-3">
       <label for="validfirstname" class="form-label">First name</label>
       <input type="text" class="form-control" id="validfirstname" name="firstname"  required>
       <div class="invalid-feedback">
@@ -126,6 +124,7 @@
       <button class="btn btn-primary" name = "submit" type="submit">Submit form</button>
     </div>
   </form>
+  </div>
 </div>
           
 
