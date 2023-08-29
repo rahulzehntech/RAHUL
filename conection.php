@@ -22,7 +22,7 @@ if (isset($_POST['submit'])) {
 
     if (mysqli_stmt_execute($stmt)) {
         echo "Record entered successfully";
-        header("Location: login.php"); 
+        header("Location: http://localhost/rahul/login.php"); 
     } else {
         echo "Error: " . mysqli_error($conn);
     }

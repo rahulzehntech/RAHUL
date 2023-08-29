@@ -42,7 +42,7 @@
     <h2 class="fw-bold">Registration Form</h2>
 
   <form class="needs-validation" method = "post" action="connection.php" novalidate enctype="multipart/form-data">
-    <div class=" col-md-4 mb-3">
+    <div class="  mb-3">
       <label for="validfirstname" class="form-label">First name</label>
       <input type="text" class="form-control" id="validfirstname" name="firstname"  required>
       <div class="invalid-feedback">
@@ -53,7 +53,7 @@
       </div>
     </div>
 
-    <div class="col-md-4 mb-3">
+    <div class="  mb-3">
       <label for="validlastname" class="form-label">Last name</label>
       <input type="text" class="form-control" id="validlastname" name="lastname" required>
       <div class="invalid-feedback">
@@ -64,7 +64,7 @@
       </div>
     </div>
 
-    <div class="col-md-4 mb-3">
+    <div class=" mb-3">
       <label for="validusername" class="form-label">Username</label>
       <div class="input-group has-validation">
         <span class="input-group-text" id="inputGroupPrepend">@</span>
@@ -76,7 +76,7 @@
     </div>
 
 
-    <div class="col-md-4 mb-3">
+    <div class=" mb-3">
       <label for="validpassword" class="form-label">Password</label>
       <div class="input-group has-validation">
        
@@ -87,7 +87,7 @@
       </div>
     </div>
 
-    <div class="col-md-4 mb-3">
+    <div class=" mb-3">
       <label for="validmobile" class="form-label">Contact number</label>
       <input type="tel" class="form-control" id="validmobile" name="contact" maxlength="10" required>
       <div class="invalid-feedback">
@@ -95,7 +95,7 @@
       </div>
     </div>
     
-    <div class="col-md-4 mb-3">
+    <div class=" mb-3">
       <label for="validcity" class="form-label">City</label>
       <input type="text" class="form-control" id="validcity" name="city" required>
       <div class="invalid-feedback">
@@ -104,7 +104,7 @@
     </div>
     
 
-    <div class="mb-3 col-md-4">
+    <div class="mb-3 ">
       <label for="validfile" class="form-label">Upload image</label>
       <input class="form-control" type="file" id="validfile" name="file"  required>
     </div>
